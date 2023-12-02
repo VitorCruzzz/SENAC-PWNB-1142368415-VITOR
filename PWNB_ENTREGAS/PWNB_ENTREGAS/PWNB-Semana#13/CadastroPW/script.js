@@ -71,11 +71,10 @@ function incluirCliente() {
         clientes.push({ nome, sobrenome, cep, endereco, numero, cidade, uf, tipoCliente });
         alert('Cliente incluído com sucesso!');
         limparCampos();
+        atualizarListaClientes(); // Adicionado para atualizar a lista após incluir um cliente
     } else {
         alert('Preencha todos os campos antes de incluir o cliente.');
     }
-    atualizarListaClientes();
-    limparCampos();
 }
 
 function confirmarCadastro() {
